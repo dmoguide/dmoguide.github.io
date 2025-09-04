@@ -1,15 +1,56 @@
-<html>
-  <head><title>eloooo</title></head>
-  <body>
-    <table border=1>
-      <tr>
-        <th>elo1</th>
-        <th>elo2</th>
-      </tr>
-      <tr>
-        <td>elooo 1</td>
-        <td>elooo 2</td>
-      </tr>     
-    </table>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MMO Game Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MMO Game Guide</h1>
+    <nav>
+      <ul>
+        <li onclick="showSection('home')">Home</li>
+        <li onclick="showSection('classes')">Classes</li>
+        <li onclick="showSection('quests')">Quests</li>
+        <li onclick="showSection('bosses')">Bosses</li>
+        <li onclick="showSection('gear')">Gear</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="guide-section active">
+      <h2>Welcome to the Guide</h2>
+      <p>This is your one-stop source for everything related to the MMO world.</p>
+    </section>
+
+    <section id="classes" class="guide-section">
+      <h2>Character Classes</h2>
+      <p>Learn about the different classes and their roles.</p>
+    </section>
+
+    <section id="quests" class="guide-section">
+      <h2>Quests</h2>
+      <p>Details on main story and side quests.</p>
+    </section>
+
+    <section id="bosses" class="guide-section">
+      <h2>Boss Fights</h2>
+      <p>Strategies and tips for defeating major bosses.</p>
+    </section>
+
+    <section id="gear" class="guide-section">
+      <h2>Gear & Items</h2>
+      <p>Best equipment and how to get them.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 MMO Game Guide. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
